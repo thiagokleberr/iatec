@@ -50,7 +50,7 @@ Esta API REST permite registrar, buscar e atualizar vendas. Foi desenvolvida em 
   },
   "items": [
     {
-      "quantity": 2,
+      "description": 2,
       "price": 50.0
     }
   ]
@@ -74,21 +74,22 @@ Esta API REST permite registrar, buscar e atualizar vendas. Foi desenvolvida em 
 {
   "data": {
     "id": 1,
+    "status": "AwaitingPayment",
+    "date": "2025-02-27T14:42:59.433265-03:00"
+    "orderId": 1,
     "seller": {
       "id": 1,
       "cpf": "123.456.789-00",
       "name": "João Vendedor"
     },
-    "status": "Aguardando pagamento",
     "items": [
       {
-        "productId": 101,
-        "quantity": 2,
+        "description": "Camiseta",
         "price": 50.0
       }
     ]
   },
-  "errors": null
+  "errors": []
 }
 ```
 
@@ -99,7 +100,7 @@ Esta API REST permite registrar, buscar e atualizar vendas. Foi desenvolvida em 
 **Request:**
 ```json
 {
-  "status": "Pagamento Aprovado"
+  "status": "PaymentApproved"
 }
 ```
 
