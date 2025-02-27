@@ -45,13 +45,11 @@ Esta API REST permite registrar, buscar e atualizar vendas. Foi desenvolvida em 
 ```json
 {
   "seller": {
-    "id": 1,
     "cpf": "123.456.789-00",
     "name": "João Vendedor"
   },
   "items": [
     {
-      "productId": 101,
       "quantity": 2,
       "price": 50.0
     }
