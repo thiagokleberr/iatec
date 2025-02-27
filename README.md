@@ -1,36 +1,39 @@
-# API de Vendas
+Ôªø# API de Vendas
 
-Esta API REST permite registrar, buscar e atualizar vendas. Foi desenvolvida em .NET Core e C# seguindo boas pr·ticas de desenvolvimento.
+Esta API REST permite registrar, buscar e atualizar vendas. Foi desenvolvida em .NET Core e C# seguindo boas pr√°ticas de desenvolvimento.
 
 ## Tecnologias Utilizadas
 
 - .NET Core 9.0
 - C#
-- Swagger para documentaÁ„o
-- Testes unit·rios com xUnit e Moq
+- Swagger para documenta√ß√£o
+- Testes unit√°rios com xUnit e Moq
 
-## InstalaÁ„o e ExecuÁ„o
+## Instala√ß√£o e Execu√ß√£o
 
-1. Clone este repositÛrio:
+1. Clone este reposit√≥rio:
    ```sh
    git clone https://github.com/thiagokleberr/iatec.git
    ```
-2. Navegue atÈ o diretÛrio do projeto:
+2. Navegue at√© o diret√≥rio do projeto:
    ```sh
    cd sales-api
    ```
-3. Restaure as dependÍncias:
+3. Restaure as depend√™ncias:
    ```sh
    dotnet restore
    ```
-4. Execute a aplicaÁ„o:
+4. Execute a aplica√ß√£o:
    ```sh
    dotnet run
    ```
-5. Acesse a documentaÁ„o Swagger no navegador:
+5. Acesse a documenta√ß√£o Swagger no navegador:
    ```sh
-   http://localhost:5000/api-docs
+   http://localhost:7236/api-docs
    ```
+‚ö†Ô∏è Importante: A porta do servidor pode mudar dependendo do ambiente. 
+    Caso a aplica√ß√£o n√£o esteja rodando na porta 7236, verifique a sa√≠da do terminal para saber a porta correta.
+
 
 ## Endpoints
 
@@ -44,7 +47,7 @@ Esta API REST permite registrar, buscar e atualizar vendas. Foi desenvolvida em 
   "seller": {
     "id": 1,
     "cpf": "123.456.789-00",
-    "name": "Jo„o Vendedor"
+    "name": "Jo√£o Vendedor"
   },
   "items": [
     {
@@ -76,7 +79,7 @@ Esta API REST permite registrar, buscar e atualizar vendas. Foi desenvolvida em 
     "seller": {
       "id": 1,
       "cpf": "123.456.789-00",
-      "name": "Jo„o Vendedor"
+      "name": "Jo√£o Vendedor"
     },
     "status": "Aguardando pagamento",
     "items": [
@@ -110,9 +113,9 @@ Esta API REST permite registrar, buscar e atualizar vendas. Foi desenvolvida em 
 }
 ```
 
-## Testes Unit·rios
+## Testes Unit√°rios
 
-Os testes unit·rios foram implementados com xUnit e Moq.
+Os testes unit√°rios foram implementados com xUnit e Moq.
 Para executar os testes, utilize o comando:
 ```sh
   dotnet test
@@ -120,12 +123,12 @@ Para executar os testes, utilize o comando:
 
 ## Estrutura do Projeto
 
-- `Controllers/` - ContÈm os controllers da API
-- `Services/` - ContÈm a lÛgica de negÛcios
-- `Models/` - ContÈm as classes de domÌnio
-- `Tests/` - ContÈm os testes unit·rios
+- `Controllers/` - Cont√©m os controllers da API
+- `Services/` - Cont√©m a l√≥gica de neg√≥cios
+- `Models/` - Cont√©m as classes de dom√≠nio
+- `Tests/` - Cont√©m os testes unit√°rios
 
-## ConsideraÁıes Finais
+## Considera√ß√µes Finais
 
-Este projeto segue os princÌpios SOLID e boas pr·ticas de desenvolvimento, garantindo um cÛdigo limpo e bem estruturado.
+Este projeto segue os princ√≠pios SOLID e boas pr√°ticas de desenvolvimento, garantindo um c√≥digo limpo e bem estruturado.
 
