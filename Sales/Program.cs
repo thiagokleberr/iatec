@@ -26,12 +26,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         Title = "Sales API",
         Version = "v1",
-        Description = "API para registrar, buscar e atualizar vendas",
-        Contact = new OpenApiContact
-        {
-            Name = "Thiago de Oliveira Kleber",
-            Email = "thiago.kleber@hotmail.com"
-        }
+        Description = "API para registrar, buscar e atualizar vendas"
     });
     options.SchemaFilter<GenericResponseSchemaFilter>();
 });
